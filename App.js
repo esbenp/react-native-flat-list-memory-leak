@@ -47,7 +47,7 @@ export default class App extends Component<Props, void> {
         { columns.map(({ id }) => {
             return (
               <View style={styles.column}>
-                <Image source={missingImage} style={{height: 200, width: '100%'}} />
+                <Image defaultSource={missingImage} source={"unknown-image"} style={{height: 200, width: '100%'}} />
               </View>
             )
         })}
